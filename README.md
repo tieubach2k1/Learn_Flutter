@@ -54,3 +54,11 @@ Link Course: https://www.classcentral.com/course/youtube-complete-flutter-course
 * Tiến độ project: 
 + Hoàn thành được màn hình login và chat.
 + Kết nốt với Firebase
+
+## Week 8
+* Tiến độ khoá học 44/44
+![image](https://user-images.githubusercontent.com/63546465/197100263-dfa46e5a-1466-4d6d-8911-e4f6469b0c41.png)
+
+
+* Tiến độ project: 
+Chỉnh sửa giao diện và tìm hiểu kiểm thử tự động

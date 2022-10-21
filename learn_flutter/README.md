@@ -1,16 +1,7 @@
-# learn_flutter
+![image](https://user-images.githubusercontent.com/63546465/190547783-96c727b2-1868-4dd3-8656-166bcbfee1b6.png)
 
-A new Flutter project.
+Link Course: https://www.classcentral.com/course/youtube-complete-flutter-course-in-english-by-desi-programmer-59583
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Introductions
+   Khoá Học Learning cơ bản
+>
