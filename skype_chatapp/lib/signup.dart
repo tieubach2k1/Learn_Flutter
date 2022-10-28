@@ -1,30 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:skype_chatapp/signup.dart';
 import 'package:skype_chatapp/components.dart';
+import 'package:skype_chatapp/complete.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class SignupPage extends StatelessWidget {
+  const SignupPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +15,7 @@ class MyHomePage extends StatelessWidget {
         children: [
           const Center(
               child: Text(
-            'Login',
+            'Signup',
             style: TextStyle(
                 color: Colors.white, fontWeight: FontWeight.bold, fontSize: 48),
           )),
@@ -51,22 +30,18 @@ class MyHomePage extends StatelessWidget {
             hintText: 'Enter Password',
             icon: Icons.key,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 38, vertical: 15),
-            child: Align(
-                alignment: Alignment.centerRight,
-                child: TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Forgot password?',
-                      style: TextStyle(color: Colors.white),
-                    ))),
+          Textfield(
+            hintText: 'Confirm Password',
+            icon: Icons.key,
+          ),
+          SizedBox(
+            height: 20,
           ),
           Button(
-            text: 'Login',
+            text: 'Signup',
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return SignupPage();
+                return CompleteProfile();
               }));
             },
           ),
@@ -80,7 +55,7 @@ class MyHomePage extends StatelessWidget {
                 child: TextButton(
                     onPressed: () {},
                     child: Text(
-                      'New user ? Signup',
+                      'Already have an account ? Login',
                       style: TextStyle(color: Colors.white),
                     ))),
           ),
