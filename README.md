@@ -4,15 +4,19 @@ Thành Viên
 1. Lý Hoàng Anh - 19021210
 2. Đào Thị Ngát - 19021339
 ----
-![image](https://user-images.githubusercontent.com/63546465/190547783-96c727b2-1868-4dd3-8656-166bcbfee1b6.png)
+<img src="https://user-images.githubusercontent.com/63546465/190547783-96c727b2-1868-4dd3-8656-166bcbfee1b6.png" align='left' width='40%' />
 
 Link Course: https://www.classcentral.com/course/youtube-complete-flutter-course-in-english-by-desi-programmer-59583
 
 # Introductions
    Khoá Học Learning cơ bản
->
 
 
+
+#
+#
+#
+#
 
 ----
 
