@@ -19,33 +19,34 @@ class SignupPage extends StatelessWidget {
             style: TextStyle(
                 color: Colors.white, fontWeight: FontWeight.bold, fontSize: 48),
           )),
-          SizedBox(
+          const SizedBox(
             height: 74,
           ),
-          Textfield(
+          const Textfield(
             hintText: 'Enter Your Email',
             icon: Icons.email,
           ),
-          Textfield(
+          const Textfield(
             hintText: 'Enter Password',
             icon: Icons.key,
           ),
-          Textfield(
+          const Textfield(
             hintText: 'Confirm Password',
             icon: Icons.key,
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Button(
             text: 'Signup',
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return CompleteProfile();
-              }));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const CompleteProfile()));
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 65,
           ),
           Padding(
@@ -54,7 +55,7 @@ class SignupPage extends StatelessWidget {
                 alignment: Alignment.center,
                 child: TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       'Already have an account ? Login',
                       style: TextStyle(color: Colors.white),
                     ))),

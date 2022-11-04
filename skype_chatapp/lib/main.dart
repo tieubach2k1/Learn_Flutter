@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:skype_chatapp/signup.dart';
 import 'package:skype_chatapp/components.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Chat app',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -40,14 +41,14 @@ class MyHomePage extends StatelessWidget {
             style: TextStyle(
                 color: Colors.white, fontWeight: FontWeight.bold, fontSize: 48),
           )),
-          SizedBox(
+          const SizedBox(
             height: 74,
           ),
-          Textfield(
+          const Textfield(
             hintText: 'Enter Your Email',
             icon: Icons.email,
           ),
-          Textfield(
+          const Textfield(
             hintText: 'Enter Password',
             icon: Icons.key,
           ),
@@ -57,7 +58,7 @@ class MyHomePage extends StatelessWidget {
                 alignment: Alignment.centerRight,
                 child: TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       'Forgot password?',
                       style: TextStyle(color: Colors.white),
                     ))),
@@ -65,12 +66,12 @@ class MyHomePage extends StatelessWidget {
           Button(
             text: 'Login',
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
+              Navigator.push(context, MaterialPageRoute(builder: (context){
                 return SignupPage();
               }));
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 65,
           ),
           Padding(
@@ -79,7 +80,7 @@ class MyHomePage extends StatelessWidget {
                 alignment: Alignment.center,
                 child: TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       'New user ? Signup',
                       style: TextStyle(color: Colors.white),
                     ))),

@@ -17,10 +17,12 @@ class CompleteProfile extends StatelessWidget {
         children: [
           const Center(
               child: Text(
-            'Complete',
-            style: TextStyle(
-                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 48),
-          )),
+                'Complete',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 48),
+              )),
           SizedBox(
             height: 74,
           ),
@@ -42,12 +44,13 @@ class CompleteProfile extends StatelessWidget {
           Button(
             text: 'Complete',
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return Dashboard();
-              }));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Dashboard()));
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 65,
           ),
         ],
