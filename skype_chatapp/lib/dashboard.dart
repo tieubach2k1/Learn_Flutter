@@ -3,7 +3,7 @@ import 'package:skype_chatapp/chatPage.dart';
 import 'package:skype_chatapp/profile.dart';
 
 class Dashboard extends StatelessWidget {
-  const Dashboard({Key? key}) : super(key: key);
+  const  Dashboard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

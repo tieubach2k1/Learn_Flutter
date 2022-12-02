@@ -18,7 +18,7 @@ class ChatPage extends StatelessWidget {
             child: InkWell(
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                  return ProfilePage();
+                  return const ProfilePage();
                 }));
               },
               child: const CircleAvatar(

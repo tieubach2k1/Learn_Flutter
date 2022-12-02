@@ -1,7 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:skype_chatapp/Auth/auth.dart';
 
-class ProfilePage extends StatelessWidget {
+class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
+
+  @override
+  State<ProfilePage> createState() => _ProfilePageState();
+}
+
+class _ProfilePageState extends State<ProfilePage> {
+  var data;
+
+  @override
+  void initState() {
+    Auth().getInfo().then((value){
+      data = value;
+      if(mounted) {
+        setState(() {});
+      }
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +31,7 @@ class ProfilePage extends StatelessWidget {
           'Profile Page',
         ),
       ),
-      body: Column(
+      body: data != null ? Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const Padding(
@@ -30,11 +49,11 @@ class ProfilePage extends StatelessWidget {
               decoration: BoxDecoration(
                   color: const Color.fromRGBO(214, 224, 239, 1),
                   borderRadius: BorderRadius.circular(11)),
-              child: const Align(
+              child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding:  EdgeInsets.all(8.0),
-                    child: Text('Name: Codectionary', style: TextStyle(color: Color.fromRGBO(18, 38, 67, 0.82), fontWeight: FontWeight.w300),),
+                    padding:  const EdgeInsets.all(8.0),
+                    child: Text('Name: ${data['name']}', style: const TextStyle(color: Color.fromRGBO(18, 38, 67, 0.82), fontWeight: FontWeight.w300),),
                   )),
             ),
           ),
@@ -46,16 +65,16 @@ class ProfilePage extends StatelessWidget {
               decoration: BoxDecoration(
                   color: const Color.fromRGBO(214, 224, 239, 1),
                   borderRadius: BorderRadius.circular(11)),
-              child: const Align(
+              child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding:  EdgeInsets.all(8.0),
-                    child: Text('Email: Codectionary@gmail.com', style: TextStyle(color: Color.fromRGBO(18, 38, 67, 0.82), fontWeight: FontWeight.w300),),
+                    padding:  const EdgeInsets.all(8.0),
+                    child: Text('Email: ${data['email']}', style: const TextStyle(color: Color.fromRGBO(18, 38, 67, 0.82), fontWeight: FontWeight.w300),),
                   )),
             ),
           ),
         ],
-      ),
+      ): Center(child: CircularProgressIndicator(color: Colors.indigo,),),
     );
   }
 }
